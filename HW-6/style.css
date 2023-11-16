@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@300;400;500;600;800&family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "gg sans",
+    "Noto Sans",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+  ;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 3.125%;
+  /* 40/1280 */
+  align-items: center;
+  background-color: #404eed;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.logo::before {
+  content: url("./img/icons/icons8-discord2.png");
+}
+
+.nav-list {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.nav-list-item {
+  color: white;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+.nav-list-item:hover {
+  text-decoration: underline;
+}
+
+.login {
+  color: black;
+  padding: 7px 16px;
+  background-color: white;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.login:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+  color: #5865f2;
+}
+
+.hero-container {
+  padding: 120px 3.125%;
+  /* 40/1280 */
+  background-image: url("./img/bg.svg");
+  background-repeat: repeat-x;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-color: #404eed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hero-content {
+  margin: 0 auto;
+  margin-bottom: 8px;
+  text-align: center;
+  max-width: 70%;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 95%;
+  font-family: "ABC Ginto Nord",
+    "Noto Sans",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+.hero-content p {
+  margin-top: 40px;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  flex-wrap: wrap;
+}
+
+.btn-download {
+  padding: 16px 32px;
+  border-radius: 28px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+.hero-btn .btn-download {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-btn .btn-download:hover {
+  color: #404eed;
+}
+
+.btn-download::before {
+  content: url("./img/icons/icons8-download-24-black.png");
+}
+
+.hero-btn .btn-download:hover::before {
+  content: url("./img/icons/icons8-download-24-blue.png");
+}
+
+.hero-btn .btn-open {
+  padding: 16px 32px;
+  border-radius: 28px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #23272a;
+  color: white;
+  border: none;
+  margin-top: 24px;
+}
+
+.hero-btn .btn-open:hover {
+  background-color: #313338;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+}
+
+.hero-img {
+  position: absolute;
+}
+
+.hero-left {
+  right: 77%;
+  top: 31%;
+}
+
+.hero-right {
+  left: 79%;
+  top: 29.5%;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 120px 3.125%;
+  /* 40/1280 */
+  gap: 8%;
+}
+
+.section-content {
+  max-width: 29%;
+}
+
+.section-content h2 {
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 800;
+}
+
+.section-content p {
+  margin-top: 24px;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.625;
+  font-weight: 400;
+}
+
+.section-container img {
+  width: 100%;
+}
+
+.voice-connected-container,
+.just-chillin-container,
+.section-download {
+  background: #f6f6f6;
+}
+
+.coach-container img {
+  width: 55%;
+}
+
+.just-chillin-container {
+  padding: 120px 3.125% 50px;
+  /* 40/1280 */
+  text-align: center;
+  width: auto;
+}
+
+.just-chillin-content {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.just-chillin-content h2 {
+  text-transform: uppercase;
+  font-family: "ABC Ginto Nord",
+    "Noto Sans",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: clamp(18px, 4vw, 38px);
+  font-weight: 800;
+  line-height: 95%;
+}
+
+.just-chillin-content p {
+  margin-top: 24px;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+.just-chillin-container img {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.section-download {
+  padding: 0 3.125% 120px;
+  /* 40/1280 */
+}
+
+.section-download h3 {
+  background-image: url("./img/stars.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.section-download .btn-download {
+  margin: 0 auto;
+  background-color: #5865f2;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.section-download .btn-download::before {
+  content: url("./img/icons/icons8-download-24-white.png");
+}
+
+.section-download .btn-download:hover {
+  background-color: #7983f5;
+}
+
+footer {
+  background-color: #23272a;
+  color: white;
+  padding: 80px 0 64px;
+}
+
+.ukr {
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.ukr::before {
+  content: url("./img/icons/icons8-national-24.png");
+}
+
+.social-icons {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.125%;
+  /* 40/1280 */
+}
+
+.lists-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 60px;
+  flex-wrap: wrap;
+}
+
+.lists-links ul {
+  margin-bottom: 40px;
+}
+
+.link-item {
+  font-size: 14px;
+  line-height: 30px;
+  color: white;
+  margin-top: 8px;
+}
+
+.link-item:hover {
+  text-decoration: underline;
+}
+
+.first-item {
+  margin-bottom: 20px;
+  color: #5865f2;
+}
+
+.footer-line {
+  background-color: #5865f2;
+  border: none;
+  width: 90%;
+  height: 1.5px;
+  margin: 0 auto 32px;
+}
+
+.footer {
+  padding: 0 3.125%;
+  /* 40/1280 */
+  display: flex;
+  justify-content: space-between;
+}
+
+.register {
+  padding: 7px 16px;
+  color: white;
+  border-radius: 40px;
+  font-size: 14px;
+  background-color: #5865f2;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.register:hover {
+  background-color: #7983f5;
+}
+
+@media screen and (max-width: 1030px) {
+  .nav-list {
+    display: none;
+  }
+
+  .hero-left {
+    display: none;
+  }
+
+  .hero-right {
+    top: 40%;
+    left: 45%;
+    /* width: 65%; */
+  }
+
+  .hero-content {
+    text-align: left;
+    margin: 0;
+    max-width: 60%;
+  }
+
+
+  .hero-content h1 {
+    font-size: 44px;
+  }
+
+  .hero-btn {
+    justify-content: flex-start;
+  }
+
+  .section-container {
+    gap: 5%;
+  }
+
+  .section-content {
+    max-width: 46%;
+  }
+
+  .just-chillin-content {
+    max-width: 100%;
+  }
+
+  .lists-links {
+    max-width: 40%;
+    margin: 0 10%;
+    gap: 0 30px;
+  }
+
+  .lists-links ul {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    background-image: none;
+    padding-bottom: 0;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    display: block;
+    margin-top: 50px;
+    position: inherit;
+    width: 80%;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(22px, 5vw, 42px);
+  }
+
+  .section-container {
+    padding: 60px 3.125%;
+  }
+
+  .study-group-container,
+  .coach-container {
+    flex-direction: column;
+  }
+
+  .voice-connected-container {
+    flex-direction: column-reverse;
+  }
+
+  .section-content {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .section-content h2 {
+    font-size: clamp(18px, 4vw, 38px);
+  }
+
+  .section-content p {
+    font-size: 16px;
+  }
+
+  .coach-container img {
+    width: 100%;
+  }
+
+  .just-chillin-container {
+    padding: 60px 3.125%;
+  }
+
+  .just-chillin-content {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .section-download {
+    padding-bottom: 60px;
+  }
+
+  .section-download .btn-download {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .lists-links {
+    max-width: 100%;
+    margin: 0;
+  }
+}
